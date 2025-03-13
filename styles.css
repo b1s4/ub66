@@ -1,57 +1,122 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    height: 100%;
+body {
     font-family: Arial, sans-serif;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
-    grid-template-rows: repeat(5, 1fr); /* 5 filas */
-    height: 100vh;
-    background-image: url('adfdas.jpg'); /* Cambia esta URL por la de tu imagen */
-    background-size: 1000px; /* Cubre todo el fondo */
-}
-
-.grid-item {
-    border: 1px solid rgba(255, 255, 255, 0.5); /* Límite de cada celda */
     display: flex;
-    flex-direction: column; /* Alinea los elementos (imagen y texto) en columna */
-    justify-content: flex-start; /* Alinea los elementos al principio (arriba) */
-    align-items: center; /* Centra los elementos horizontalmente */
-    text-decoration: none; /* Quitar el subrayado de los enlaces */
-    transition: all 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra en las celdas */
-
-    background-size: 100px 100px; /* Establece el tamaño de la imagen de fondo en 100px x 100px */
-
+    margin: 0;
+    background-color: #f6f8fc;
 }
 
-.grid-item:hover {
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5); /* Sombra más fuerte cuando se pasa el ratón */
-    background-color: rgba(255, 255, 255, 0.5); /* Cambiar el fondo al pasar el ratón */
-}
-
-.images {
-    width: 100px; /* Establece el ancho de la imagen en 100px */
-    height: 100px; /* Establece la altura de la imagen en 100px */
-    object-fit: cover; /* Asegura que la imagen se recorte proporcionalmente si es necesario */
-    margin-bottom: 10px; /* Añade un margen debajo de la imagen para separar del texto */
-}
-
-p {
-    text-align: center; /* Centra el texto debajo de la imagen */
-    font-size: 25px; /* Ajusta el tamaño del texto */
-    color: #000000; /* Color del texto */
-}
-
-.id{
-    color:black;
-    font-size: 90px; 
+.sidebar {
+    width: 250px;
+    background: #fff;
+    padding: 20px;
+    height: 100vh;
     text-align: center;
 }
+
+/* Imagen de perfil */
+.profile-img {
+    width: 109px;
+    height: 40px;
+    
+}
+
+/* Botón de redactar */
+.compose-btn {
+    width: 200px;
+    background: #c2e7ff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Iconos del menú lateral */
+.sidebar ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.sidebar ul .active {
+    font-weight: bold;
+}
+
+.sidebar ul li .count {
+    background: #d93025;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.top-bar input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    
+}
+
+.email-list {
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: black;
+}
+
+.email input {
+    margin-right: 10px;
+}
+
+.email .subject {
+    flex: 1;
+}
+
+.email .time {
+    color: gray;
+    font-size: 12px;
+}
+
+.email.unread {
+    font-weight: bold;
+}
+
+

@@ -5,111 +5,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gmail</title>
     <link rel="shortcut icon" href="https://www.google.com/a/cpanel/txingudibhi.net/images/favicon.ico">
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="cookiesblock.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
 </head>
 <body>
-    <div class="grid-container">
-        <a href="snowrider/game.html" class="grid-item">
-            <img class="images" src="snowrider/snow-rider-3d.png"/>
-            <p>Snow Rider 3D</p>
-        </a>
-        <a href="minecraft/index.html" class="grid-item">
-            <img class="images" src="minecraft/logo.jpg"/>
-            <p>Minecraft</p>
-        </a>
-        <a href="tetris/index.html" class="grid-item">
-            <img class="images" src="tetris/logo.jpg"/>
-            <p>Tetris</p>
-        </a>
-        <a href="2048/index.html" class="grid-item">
-            <img class="images" src="2048/favicon.ico"/>
-            <p>2048</p>
-        </a>
-        <a href="1v1.lol/index.html" class="grid-item">
-            <img class="images" src="1v1.lol/favicon.png"/>
-            <p>1v1.lol</p>
-        </a>
-        <a href="chromedino/index.html" class="grid-item">
-            <img class="images" src="chromedino/logo.jpg"/>
-            <p>Dino</p>
-        </a>
-        <a href="eggy-car/index.html" class="grid-item">
-            <img class="images" src="eggy-car/logo.jpg"/>
-            <p>Eggy Car</p>
-        </a>
-        <a href="hextris/index.html" class="grid-item">
-            <img class="images" src="hextris/favicon.ico"/>
-            <p>Hextris</p>
-        </a>
-        <a href="motox3m/index.html" class="grid-item">
-            <img class="images" src="motox3m/moto-x3m.png"/>
-            <p>Moto-X3M</p>
-        </a>
-        <a href="motox3m2/index.html" class="grid-item">
-            <img class="images" src="motox3m2/logo.jpg"/>
-            <p>Moto-X3M 2</p>
-        </a>
-        <a href="ovo/index.html" class="grid-item">
-            <img class="images" src="ovo/ovo.png"/>
-            <p>Ovo</p>
-        </a>
-        <a href="slope/index.html" class="grid-item">
-            <img class="images" src="slope/logo.png"/>
-            <p>Slope</p>
-        </a>
-        <a href="slope3/index.html" class="grid-item">
-            <img class="images" src="slope3/logo.png"/>
-            <p>Slope 3</p>
-        </a>
-        <a href="tunnelrush/index.html" class="grid-item">
-            <img class="images" src="tunnelrush/logo.jpg"/>
-            <p>Tunnelrush</p>
-        </a>
-        <a href="vex3/index.html" class="grid-item">
-            <img class="images" src="vex3/assets/images/vex-logo.png"/>
-            <p>Vex 3</p>
-        </a>
-        <a href="drift-hunters/index.html" class="grid-item">
-            <img class="images" src="drift-hunters/drif-hunters.jpeg"/>
-            <p>drift-hunters</p>
-        </a>
-        <a href="block-blast/index.html" class="grid-item">
-            <img class="images" src="block-blast/block-blast.jpg"/>
-            <p>block-blast</p>
-        </a>
-        <a href="cookieclicker/index.html" class="grid-item">
-            <img class="images" src="cookieclicker/img/perfectCookie.png"/>
-            <p>cookie clicker</p>
-        </a>
-        <a href="Basket-Random/index.html" class="grid-item">
-            <img class="images" src="Basket-Random/images/shared-1-sheet0.png"/>
-            <p>Basket-Random</p>
-        </a>
-        <a href="Soccer-Random/index.html" class="grid-item">
-            <img class="images" src="Soccer-Random/favicon.ico"/>
-            <p>Soccer-Random</p>
-        </a>
-        <a href="Boxing-Random/index.html" class="grid-item">
-            <img class="images" src="Boxing-Random/favicon.ico"/>
-            <p>Boxing-Random</p>
-        </a>
-        <a href="Run-3/index.html" class="grid-item">
-            <img class="images" src="Run-3/favicon.ico"/>
-            <p>Run 3</p>
-        </a>
-        <a href="" class="grid-item">
-            <div class="id" id="user-id">Cargando ID...</div> <!-- El ID se mostrará aquí -->
-        </a>
-        <a href="pixel spedrun/index.html" class="grid-item">
-            <img class="images" src="pixel spedrun/logo.jpg"/>
-            <p>pixel spedrun</p>
-        </a>
-        <a href="csgoclicker/index.html" class="grid-item">
-            <img class="images" src="csgoclicker/logo.png"/>
-            <p>CS Case Clicker</p>
-        </a>
+    <div class="sidebar">
+        <!-- Imagen de perfil encima del botón "Redactar" -->
+        <img src="imgs/slidebar/gmail_logo.png" alt="Perfil" class="profile-img">
+        <br>
+        <button class="compose-btn"><img src="imgs/slidebar/write.png" > Redactar</button>
+
+        <ul>
+            <li>
+                <strong><div class="id" id="user-id">Cargando ID...</div></strong>
+            </li>
+            <br>
+            <li class="active">
+                <img src="imgs/slidebar/inbox.png" alt="Recibidos">
+                Recibidos 
+            </li>
+            <li>
+                <img src="imgs/slidebar/star.png" alt="Destacados">
+                Destacados
+            </li>
+            <li>
+                <img src="imgs/slidebar/schedule.png" alt="Pospuestos">
+                Pospuestos
+            </li>
+            <li>
+                <img src="imgs/slidebar/sent.png" alt="Enviados">
+                Enviados
+            </li>
+            <li>
+                <img src="imgs/slidebar/borradores.png" alt="Borradores">
+                Borradores
+            </li>
+            <li>
+                <img src="imgs/slidebar/expand.png" alt="Más">
+                Más
+            </li>
+            <br>
+            <br>
+            <li>
+                <img src="imgs/slidebar/expand.png" alt="Más">
+                <strong>Etiquetas</strong>
+                
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="top-bar">
+            <input type="text" placeholder="VIVA FRANCO">
+            <div class="settings">
+                <img src="imgs/topbar/settings.png" alt="">
+                <img src="imgs/topbar/account logo.png">
+            </div>
+        </div>
+        
+         <div class="email-list">
+            <a href="snowrider/game.html" class="email unread">
+                <input type="checkbox">
+                <strong>Snow Rider 3D</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="minecraft/index.html" class="email">
+                <input type="checkbox">
+                <strong>Minecraft</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="tetris/index.html" class="email">
+                <input type="checkbox">
+                <strong>Tetris</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="2048/index.html" class="email">
+                <input type="checkbox">
+                <strong>2048</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="1v1.lol/index.html" class="email">
+                <input type="checkbox">
+                <strong>1v1.lol</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="chromedino/index.html" class="email">
+                <input type="checkbox">
+                <strong>Dino</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="eggy-car/index.html" class="email">
+                <input type="checkbox">
+                <strong>Eggy Car</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="hextris/index.html" class="email">
+                <input type="checkbox">
+                <strong>Hextris</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="motox3m/index.html" class="email">
+                <input type="checkbox">
+                <strong>Moto-X3M</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="motox3m2/index.html" class="email">
+                <input type="checkbox">
+                <strong>Moto-X3M 2</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="moto mx3-winter/index.html" class="email">
+                <input type="checkbox">
+                <strong>moto mx3-winter</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="moto mx3-pool-party/index.html" class="email">
+                <input type="checkbox">
+                <strong>moto mx3-pool-party</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="moto mx3-spooky-land/index.html" class="email">
+                <input type="checkbox">
+                <strong>moto mx3-spooky-land</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="ovo/index.html" class="email">
+                <input type="checkbox">
+                <strong>Ovo</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="slope/index.html" class="email">
+                <input type="checkbox">
+                <strong>Slope</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="slope3/index.html" class="email">
+                <input type="checkbox">
+                <strong>Slope 3</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="tunnelrush/index.html" class="email">
+                <input type="checkbox">
+                <strong>Tunnelrush</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="vex3/index.html" class="email">
+                <input type="checkbox">
+                <strong>Vex 3</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="drift-hunters/index.html" class="email">
+                <input type="checkbox">
+                <strong>drift-hunters</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="block-blast/index.html" class="email">
+                <input type="checkbox">
+                <strong>block-blast</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="cookieclicker/index.html" class="email">
+                <input type="checkbox">
+                <strong>cookie clicker</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="Basket-Random/index.html" class="email">
+                <input type="checkbox">
+                <strong>Basket-Random</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="Soccer-Random/index.html" class="email">
+                <input type="checkbox">
+                <strong>Soccer-Random</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="Boxing-Random/index.html" class="email">
+                <input type="checkbox">
+                <strong>Boxing-Random</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="Run-3/index.html" class="email">
+                <input type="checkbox">
+                <strong>Run 3</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="pixel spedrun/index.html" class="email">
+                <input type="checkbox">
+                <strong>pixel spedrun</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="csgoclicker/index.html" class="email">
+                <input type="checkbox">
+                <strong>CS Case Clicker</strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="" class="email">
+                <input type="checkbox">
+                <strong></strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="" class="email">
+                <input type="checkbox">
+                <strong></strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+            <a href="" class="email">
+                <input type="checkbox">
+                <strong></strong>  <span class="subject"></span>
+                <span class="time">13 mar</span>
+            </a>
+
+        </div>
     </div>
 </body>
 </html>
