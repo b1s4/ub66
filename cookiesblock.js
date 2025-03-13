@@ -1,5 +1,5 @@
 // Lista blanca de IDs permitidos
-        //const whitelist = [375, 994]; // Ejemplo de lista blanca
+        const whitelist = [375, 994]; // Ejemplo de lista blanca
 
         // Función para generar un ID aleatorio entre 0 y 1000
         function generarIdUnico() {
@@ -19,6 +19,7 @@
                 idUsuario = generarIdUnico();
                 Cookies.set('user_id', idUsuario, { expires: 7, path: '/' }); // Guardamos el ID en la cookie (expira en 7 días)
                 console.log("Nuevo ID generado y guardado en cookie:", idUsuario);
+                console.log("by b1s4")
             }
 
             // Aseguramos que el valor de idUsuario es un número
@@ -30,7 +31,8 @@
             // Verificar si el ID está en la whitelist
             if (!whitelist.includes(idUsuario)) {
                 console.log("ID no permitido, redirigiendo a blocked.html");
-                window.location.href = "blocked.html"; // Redirige a la página de acceso denegado
+                window.location.href = "fakeblock.html"; // Redirige a la página de acceso denegado
+                console.log("by b1s4")
             }
         }
 

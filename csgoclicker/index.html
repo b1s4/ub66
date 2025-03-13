@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PTSYX21VVJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+    gtag('config', 'G-PTSYX21VVJ');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="Case Clicker - Play Case Clicker by Malthe">
+  <meta name="robots" data="nosnippet,noarchive,noimageindex">
+  <title>Gmail</title>
+  <link rel="shortcut icon" href="https://www.google.com/a/cpanel/txingudibhi.net/images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <div id="overlay"></div>
+  <div id="navtoggle"></div>
+  <div id="sidemenu">
+    <div id="stats">
+      <div id="cash">Loading...</div>
+      <div id="rank"></div>
+      <div id="rankText"></div>
+      <div id="rankTextRight"></div>
+      <div id="rankTop">
+        <div id="rankProcent"></div>
+      </div>
+    </div>
+    <div id="nav">
+      <button class="navlink" link="play">Click</button>
+      <button class="navlink" link="inventory">Inventory</button>
+      <button class="navlink" link="shop">Shop</button>
+      <button class="navlink" link="betting">Betting</button>
+      <button class="navlink" link="upgrades">Upgrades</button>
+      <button class="navlink" link="settings">About</button>
+      <a href="https://csgo.mtsl.dk" style="text-decoration: none"><button class="navlink">Play Case Clicker 2</button></a>
+    </div>
+  </div>
+  <div class="pages">
+    <div id="play" class="page">
+      <button id="click_cookie_m">
+					<span id="click_cookie_m_inner">€</span>
+				</button>
+    </div>
+    <div id="inventory" class="page">
+      <div class="gv">Case Clicker Legacy v0.6.4 - <a href="https://csgo.mtsl.dk" style="font-size: 14px">Play Case Clicker 2!</a></div>
+      <div id="sortDropdown">
+        <div class="dropdown-container">
+          <button class="dropdown-button">Sort</button>
+          <div class="dropdown">
+            <button class="SET_SORTING" sort="a" r="none">NAME</button>
+            <button class="SET_SORTING" sort="p" r="down">PRICE</button>
+            <button class="SET_SORTING" sort="t" r="none">TYPE</button>
+            <button class="SET_SORTING" sort="r" r="none">RARITY</button>
+          </div>
+        </div>
+      </div>
+      <button id="sellAll">Sell all items under 10€</button>
+      <button id="prevbtn">< Prev</button>
+      <input id="pn"></input>
+      <button id="nextbtn">Next ></button>
+      <div id="inventoryItems"></div>
+    </div>
+    <div id="betting" class="page">
+      <div class="combo">
+        <div id="Coinflip" class="betting"></div>
+        <div class="betting-right">
+          <button id="coinflip_func">Coin flip</button>
+        </div>
+      </div>
+      <div class="combo">
+        <div id="" class="betting"></div>
+        <div class="betting-right">
+          <h3>Jackpot</h3>
+          <button class="jackpot_func" t="low">Low</button>
+          <button class="jackpot_func disabledIf" t="high" minrank="6">High</button>
+        </div>
+      </div>
+      <div class="combo">
+        <div class="betting"></div>
+        <div class="betting-right">
+          <button id="rouletteFUNC">Roulette</button>
+        </div>
+      </div>
+    </div>
+    <div id="roulette" class="page">
+      <div class="bg_roulette"></div>
+      <h1>Roulette</h1>
+      <p>Coins: <span id="r_coins"></span></p>
+      <button id="rouletteBack"><< Back</button>
+      <button id="rouletteDeposit">Deposit</button>
+      <button id="rouletteWithdraw">Withdraw</button>
+      <div id="rou_history">
+
+      </div>
+      <div id="rouletteWheel">
+        <div id="rouletteWheel_INNER">
+
+        </div>
+      </div>
+      <div id="rou_betting_bet_controls">
+        <div class="rou_betOn_container">
+          <button class="rou_betOn" t="r" style="background: #a92727;">Red 2x</button>
+          <div id="rou_betting_r" class="rou_betting_div">0</div>
+        </div>
+        <div class="rou_betOn_container">
+          <button class="rou_betOn" t="g" style="background: #27a94a;">Green 20x</button>
+          <div id="rou_betting_g" class="rou_betting_div">0</div>
+        </div>
+        <div class="rou_betOn_container">
+          <button class="rou_betOn" t="b" style="background: #000000;">Black 2x</button>
+          <div id="rou_betting_b" class="rou_betting_div">0</div>
+        </div>
+      </div>
+      <div id="rou_betting_amount_controls">
+        <div id="rou_betting"></div>
+        <button class="rou_bet" t="c">Clear</button>
+        <button class="rou_bet" t="a">All</button>
+        <button class="rou_bet" t="-100">-100</button>
+        <button class="rou_bet" t="-10">-10</button>
+        <button class="rou_bet" t="-1">-1</button>
+        <button class="rou_bet" t="+1">+1</button>
+        <button class="rou_bet" t="+10">+10</button>
+        <button class="rou_bet" t="+100">+100</button>
+      </div>
+    </div>
+    <div id="shop" class="page">
+
+    </div>
+    <div id="upgrades" class="page">
+
+    </div>
+    <div id="settings" class="page">
+      <h1>Case clicker credits</h1><br>
+      <p>Made and coded by <a href="http://mtsl.dk" target="_blank">Malthe</a>.</p>
+      <p>Skin stats and prices from <a href="https://csgostash.com" target="_blank">csgostash.com</a>, and/or steamcommunity.</p>
+			<p>Icons by <a href="http://icons8.com" target="_blank">Icons8</a>.</p>
+			<p>And yes, for anyone looking at the code, it's old and really bad, I know :)</p>
+      <p>Contact: twitter: @malthsl | email: malthe@mtsl.dk.</p>
+      <div class="split"></div>
+      <p>The images used for skins and items are from the Steam Marketplace.</p>
+      <p>This site is not associated with Valve Corp.</p>
+      <div class="split"></div>
+      <h1>Settings:</h1>
+      <button id="toggle_fg">Fancy graphics On</button>
+
+      <div class="bottom">
+        <div class="split"></div>
+        <p>Changelog v0.6.4</p>
+        <p>- Final Update</p>
+        <p>Changelog v0.6.3</p>
+        <p>- Minor tweaks</p>
+        <p>- Readying up for Case Clicker 2 Beta</p>
+        <div class="split"></div>
+        <p>Changelog v0.6.2</p>
+        <p>- Improved load times</p>
+        <div class="split"></div>
+        <h2>v0.6.4</h2>
+      </div>
+    </div>
+  </div>
+  <div class="popups">
+    <div id="wonitems" class="popup">
+      <div id="wonitemscontainer">
+
+      </div>
+      <button class="closePopupBtn" id="topbtn">Done</button>
+    </div>
+    <div id="caseOpener" class="popup">
+      <div id="openHere">
+        <div class="opener">
+          <div class="scroll-s"></div>
+          <div class="selector"></div>
+        </div>
+      </div>
+      <button class="closePopupBtn" id="closeOpener">Done</button>
+    </div>
+    <div id="case" class="popup">
+      <h1 id="openerType"></h1>
+      <div id="openerDisplay">
+        <div id="selector"></div>
+      </div>
+      <button class="closePopupBtn" id="btnLeftCase"><< Back</button>
+      <button class="openCase disabledIf" id="btnCenterCase">Open Case</button>
+      <button class="open5Cases disabledIf" id="btnCenterCaseBottom">x5</button>
+      <button class="buyKey disabledIf" min="2.40" id="btnRightCase">Buy key for 2.4€</button>
+      <div id="wic_div"></div>
+    </div>
+    <div id="inspect" class="popup">
+      <div id="inspect_image">
+
+      </div>
+      <h1 id="inspect_name"></h1>
+      <table>
+        <tr>
+          <td>Skin name:</td>
+          <td id="inspect_wname"></td>
+        </tr>
+        <tr>
+          <td>Stattrak:</td>
+          <td id="inspect_stattrak"></td>
+        </tr>
+        <tr>
+          <td>Rarity:</td>
+          <td id="inspect_rarity"></td>
+        </tr>
+        <tr>
+          <td>Price:</td>
+          <td id="inspect_price"></td>
+        </tr>
+      </table>
+      <button class="closePopupBtn">Done</button>
+    </div>
+    <div id="offline" class="popup">
+      <h1>Welcome Back!</h1>
+      <p>You earned <span id="msg_wb_e"></span></p>
+    </div>
+    <div id="coinflip" class="popup">
+      <h1>Coin flip</h1>
+      <div class="actions">
+        <button id="closeCoinFlip" class="closePopupBtn">Back</button>
+        <button id="startCoinFlipBTN">Select items</button>
+      </div>
+      <div id="cf_output"></div>
+      <div id="coins">
+        <figure id="coin_ct"></figure>
+        <figure id="coin_t"></figure>
+      </div>
+    </div>
+    <div id="jackpot" class="popup">
+      <h1>Jackpot - <span id="jp_t"></span></h1>
+      <div class="actions">
+        <button id="closeJackpot" class="closePopupBtn">Back</button>
+        <button id="joinJackpot">Join</button>
+      </div>
+      <div id="jp_output"></div>
+      <div id="jp_winlose_output"></div>
+      <div id="jp_selector">
+        <div id="jp_inner">
+
+        </div>
+      </div>
+      <table id="jp_joined">
+
+      </table>
+    </div>
+    <div id="moveInv" class="popup">
+      <div class="header">
+        <h3>Click on a item to add or remove it.</h3>
+        <button id="prevbtn2">< Prev</button>
+        <input id="pn2"></input>
+        <button id="nextbtn2">Next ></button>
+      </div>
+      <div id="invWeapons">
+
+      </div>
+      <div id="BetWith">
+
+      </div>
+      <div class="tradeOptions">
+        <button id="cancelTrade" class="closePopupBtn">Cancel</button>
+        <button id="removeAllFunc"><</button>
+        <button id="tradeAllFunc">></button>
+        <button id="tradeDoFunc">Accept</button>
+        <p>Value: <span id="tradeValue">0€</span></p>
+      </div>
+    </div>
+    <div id="rouletteWithdrawMenu" class="popup">
+      <div class="bg_roulette"></div>
+      <h1>Withdraw</h1>
+      <p>Coins: <span id="w_coins"></span></p>
+      <input type="text" placeholder="Search..." id="withdrawSearch">
+      <button id="withdrawContainerClose">Close</button>
+      <div id="withdrawContainer">
+
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+<!--  <script>-->
+<!--    ((window) => {-->
+<!--      let popup = document.createElement('div');-->
+
+<!--      popup.style.position = 'fixed';-->
+<!--      popup.style.bottom = '0';-->
+<!--      popup.style.left = '0';-->
+<!--      popup.style.right = '0';-->
+<!--      popup.style.height = '42px';-->
+<!--      popup.style.background = '#333';-->
+<!--      popup.style.borderBottom = '1px solid #555';-->
+<!--      popup.style.lineHeight = '42px';-->
+<!--      popup.style.paddingLeft = '20px';-->
+<!--      popup.style.color = '#fff';-->
+
+<!--      popup.innerHTML = '<center>This website uses cookies! <a href="/cookies">Learn more...</a><button onclick="popupHide()">Okay</button><button style="float:right;" onclick="popupHide()">X</button></center>';-->
+
+<!--      window.popupHide = () => {-->
+<!--        document.getElementById('sidemenu').style.top = null;-->
+<!--        document.getElementById('nav').style.top = null;-->
+<!--        let pages = document.getElementsByClassName('page');-->
+<!--        for (let i = 0; i < pages.length; i++) {-->
+<!--          pages[i].style.top = null;-->
+<!--        }-->
+<!--        document.body.removeChild(popup);-->
+<!--      }-->
+
+<!--      document.body.appendChild(popup);-->
+<!--    })(window)-->
+<!--  </script>-->
+
+  <link rel="stylesheet" href="https://mtsl.dk/cookies/accepter-html.css">
+  <div id="cookie-accepter"><img src="https://mtsl.dk/cookies/cookie.png" alt="Cookie"><p>If you continue to use this site, you accept the <a href="https://mtsl.dk/cookies">Privacy Policy</a></p><button onclick="localStorage.g_privacyPolicyAccept='1';document.getElementById('cookie-accepter').style.display='none';">Hide</button></div>
+  <script>if(localStorage.g_privacyPolicyAccept==='1')document.getElementById('cookie-accepter').style.display='none';</script>
+</body>
+
+</html>
