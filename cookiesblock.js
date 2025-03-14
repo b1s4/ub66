@@ -1,5 +1,5 @@
 // Lista blanca de IDs permitidos
-        //const whitelist = [375, 994]; // Ejemplo de lista blanca
+        const whitelist = [375, 994, 494]; // Ejemplo de lista blanca
 
         // Función para generar un ID aleatorio entre 0 y 1000
         function generarIdUnico() {
